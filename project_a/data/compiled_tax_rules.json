@@ -1,0 +1,201 @@
+{
+    "2024-25": {
+        "new_regime": [
+            {
+                "lower": 0,
+                "upper": 300000,
+                "rate": 0
+            },
+            {
+                "lower": 300000,
+                "upper": 700000,
+                "rate": 0.05
+            },
+            {
+                "lower": 700000,
+                "upper": 1000000,
+                "rate": 0.10
+            },
+            {
+                "lower": 1000000,
+                "upper": 1200000,
+                "rate": 0.15
+            },
+            {
+                "lower": 1200000,
+                "upper": 1500000,
+                "rate": 0.20
+            },
+            {
+                "lower": 1500000,
+                "upper": null,
+                "rate": 0.30
+            }
+        ],
+        "old_regime": {
+            "below_60": [
+                {
+                    "lower": 0,
+                    "upper": 250000,
+                    "rate": 0
+                },
+                {
+                    "lower": 250000,
+                    "upper": 500000,
+                    "rate": 0.05
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ],
+            "senior_60_to_79": [
+                {
+                    "lower": 0,
+                    "upper": 300000,
+                    "rate": 0
+                },
+                {
+                    "lower": 300000,
+                    "upper": 500000,
+                    "rate": 0.05
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ],
+            "super_senior_80_plus": [
+                {
+                    "lower": 0,
+                    "upper": 500000,
+                    "rate": 0
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ]
+        }
+    },
+    "2025-26": {
+        "new_regime": [
+            {
+                "lower": 0,
+                "upper": 400000,
+                "rate": 0
+            },
+            {
+                "lower": 400000,
+                "upper": 800000,
+                "rate": 0.05
+            },
+            {
+                "lower": 800000,
+                "upper": 1200000,
+                "rate": 0.1
+            },
+            {
+                "lower": 1200000,
+                "upper": 1600000,
+                "rate": 0.15
+            },
+            {
+                "lower": 1600000,
+                "upper": 2000000,
+                "rate": 0.2
+            },
+            {
+                "lower": 2000000,
+                "upper": 2400000,
+                "rate": 0.25
+            },
+            {
+                "lower": 2400000,
+                "upper": null,
+                "rate": 0.3
+            }
+        ],
+        "old_regime": {
+            "below_60": [
+                {
+                    "lower": 0,
+                    "upper": 250000,
+                    "rate": 0
+                },
+                {
+                    "lower": 250000,
+                    "upper": 500000,
+                    "rate": 0.05
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ],
+            "senior_60_to_79": [
+                {
+                    "lower": 0,
+                    "upper": 300000,
+                    "rate": 0
+                },
+                {
+                    "lower": 300000,
+                    "upper": 500000,
+                    "rate": 0.05
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ],
+            "super_senior_80_plus": [
+                {
+                    "lower": 0,
+                    "upper": 500000,
+                    "rate": 0
+                },
+                {
+                    "lower": 500000,
+                    "upper": 1000000,
+                    "rate": 0.2
+                },
+                {
+                    "lower": 1000000,
+                    "upper": null,
+                    "rate": 0.3
+                }
+            ]
+        }
+    }
+}

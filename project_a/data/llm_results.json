@@ -1,0 +1,1800 @@
+[
+    {
+        "case_id": 1,
+        "description": "My annual salary is 12 lakh. I am 25 years old and an Indian resident.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 25,
+                "residential_status": "Resident",
+                "annual_salary": 1200000
+            },
+            "missing_information": [
+                "Investments under Section 80C (e.g., PPF, ELSS, Life Insurance, EPF)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Health insurance premium under Section 80D",
+                "Home loan interest under Section 24(b)",
+                "Rent paid, basic salary component, and city of residence for HRA exemption calculation",
+                "Other sources of income (e.g., interest income, capital gains)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, investments, and exemptions is missing. Cannot accurately compute taxable income or tax liability for FY 2024-25 (AY 2025-26) without this data."
+            ],
+            "assumptions": [
+                "Assumed standard deduction of Rs. 50,000 for Old Regime and Rs. 75,000 for New Regime (as per Union Budget 2024 proposals for FY 2024-25), but exact calculations are withheld pending full financial details."
+            ]
+        },
+        "latency_seconds": 2.8,
+        "status": "success"
+    },
+    {
+        "case_id": 2,
+        "description": "I earn 15 lakh per year. I am 30 years old and live in India.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 30,
+                "income": 1500000,
+                "residential_status": "Resident"
+            },
+            "missing_information": [
+                "Component-wise breakdown of the 15 lakh income (e.g., Salary, Business, Capital Gains, Other Sources) to apply Standard Deduction and HRA.",
+                "Whether the income is from salary or another head.",
+                "Rent paid and city of residence (for HRA exemption calculation under the old regime, if salaried).",
+                "Details of tax-saving investments/deductions under Section 80C, 80CCD(1B), 80D, and Section 24(b) home loan interest."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of the income (whether salary or otherwise) and eligible deductions is missing. Therefore, tax calculations cannot be performed accurately."
+            ],
+            "assumptions": [
+                "Assumed the individual is a resident individual below 60 years of age."
+            ]
+        },
+        "latency_seconds": 2.52,
+        "status": "success"
+    },
+    {
+        "case_id": 3,
+        "description": "My yearly income is 8 lakh. I am 45 years old and a resident of India.",
+        "response": null,
+        "latency_seconds": 1.43,
+        "status": "failed",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "case_id": 4,
+        "description": "I receive an annual salary of 20 lakh. I am 35 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 35,
+                "annual_salary": 2000000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Rent paid and city of residence (for HRA exemption calculation under the old regime)",
+                "Investments or expenses under Section 80C (e.g., PPF, ELSS, life insurance, EPF)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Medical insurance premiums paid under Section 80D (self, family, and parents)",
+                "Home loan interest paid under Section 24(b), if any",
+                "Any other eligible deductions or sources of income"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, and investments is missing to accurately compute the tax under both regimes for FY 2024-25 (AY 2025-26).",
+                "While standard deduction for salaried individuals is known (INR 50,000 for old regime and INR 75,000 for new regime under Budget 2024 updates), other variable deductions are required for a complete calculation."
+            ],
+            "assumptions": [
+                "Assumed standard deduction of INR 50,000 for the old regime and INR 75,000 for the new regime as per FY 2024-25 rules.",
+                "Assumed no other deductions or exemptions exist as none were provided."
+            ]
+        },
+        "latency_seconds": 2.16,
+        "status": "success"
+    },
+    {
+        "case_id": 5,
+        "description": "My salary is 9.5 lakh annually. I am 28 years old and resident of India.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 28,
+                "residential_status": "Resident of India",
+                "gross_salary": 950000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Details of rent paid and city of residence to calculate HRA exemption under the old regime.",
+                "Investments or expenses eligible for deductions under Section 80C (e.g., PPF, ELSS, Life Insurance, EPF, etc.).",
+                "Contributions to National Pension System (NPS) under Section 80CCD(1B).",
+                "Health insurance premium payments for self and family under Section 80D.",
+                "Interest paid on home loan under Section 24(b), if any.",
+                "Any other sources of income (e.g., interest from savings bank accounts, fixed deposits, capital gains)."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions (such as 80C, 80D, HRA) and other income sources is missing.",
+                "Standard deduction of Rs. 75,000 for the new regime and Rs. 50,000 for the old regime apply to salary income for FY 2024-25, but calculations are withheld until complete information is provided to avoid inaccurate tax liabilities."
+            ],
+            "assumptions": [
+                "The gross salary of Rs. 9.5 lakh is the only source of income.",
+                "Standard deduction of Rs. 75,000 is applicable under the new tax regime for FY 2024-25.",
+                "Standard deduction of Rs. 50,000 is applicable under the old tax regime for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 3.06,
+        "status": "success"
+    },
+    {
+        "case_id": 6,
+        "description": "I earn 6 lakh per annum. I am 62 years old and an Indian resident.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 62,
+                "residential_status": "Resident",
+                "income": {
+                    "gross_total_income": 600000
+                }
+            },
+            "missing_information": [
+                "Nature of income (e.g., Salary, Business/Profession, Other Sources) to determine eligibility for standard deduction and deductions like HRA.",
+                "Details of deductions under Chapter VI-A (e.g., Section 80C, 80D, etc.) for the old tax regime.",
+                "Details of home loan interest under Section 24(b), if applicable."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of the income (salary vs other sources) and eligible deductions is missing. Therefore, tax calculations cannot be completed with certainty."
+            ],
+            "assumptions": [
+                "Assumed income of 6 lakh per annum is the gross total income."
+            ]
+        },
+        "latency_seconds": 1.89,
+        "status": "success"
+    },
+    {
+        "case_id": 7,
+        "description": "My annual income is 25 lakh. I am 55 years old and resident of India.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 55,
+                "residential_status": "Resident of India",
+                "gross_income": 2500000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Breakdown of annual income (e.g., Salary, Income from House Property, Capital Gains, Other Sources)",
+                "Details of investments and deductions under Section 80C (e.g., PPF, ELSS, life insurance, etc.)",
+                "Details of contributions under Section 80CCD(1B) (NPS)",
+                "Details of medical insurance premiums paid under Section 80D (including age of parents if applicable)",
+                "Details of home loan interest under Section 24(b) if any",
+                "Rent paid and city of residence for HRA exemption calculation (if salary is applicable)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of the income (Salary vs. other heads) and eligible deductions under various sections (80C, 80D, 24b, etc.) is missing. Therefore, accurate tax calculations under both the old and new tax regimes cannot be performed at this stage."
+            ],
+            "assumptions": [
+                "Assumed annual income of 25,00,000 INR is total gross total income before any deductions."
+            ]
+        },
+        "latency_seconds": 2.24,
+        "status": "success"
+    },
+    {
+        "case_id": 8,
+        "description": "I get 18 lakh as yearly salary. I am 40 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 40,
+                "yearly_salary": 1800000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Investments under Section 80C (e.g., PPF, ELSS, Life Insurance, EPF)",
+                "Contributions to Section 80CCD(1B) (NPS)",
+                "Medical insurance premiums paid under Section 80D (self and parents)",
+                "Home loan interest paid under Section 24(b)",
+                "Actual rent paid, city of residence, and basic salary components for HRA exemption calculation (if applicable)",
+                "Any other eligible deductions or sources of income (e.g., interest income, capital gains)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, and other sources of income is missing. Therefore, tax calculations cannot be performed with certainty at this stage."
+            ],
+            "assumptions": [
+                "Standard deduction of Rs. 50,000 for the old regime and Rs. 75,000 for the new regime (as per Budget 2024 amendments for FY 2024-25) would apply to the salary income once details are confirmed."
+            ]
+        },
+        "latency_seconds": 2.64,
+        "status": "success"
+    },
+    {
+        "case_id": 9,
+        "description": "My salary is 7 lakh per year. I am 22 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 22,
+                "income": {
+                    "salary": 700000
+                }
+            },
+            "missing_information": [
+                "Details of investments or expenses eligible for deductions under Section 80C (e.g., PPF, ELSS, Life Insurance), Section 80CCD(1B) (NPS), Section 80D (Health Insurance), and Section 24(b) (Home Loan Interest) for calculating tax under the old regime.",
+                "Residential status (Resident, Non-Resident, or Resident but Not Ordinarily Resident).",
+                "Whether living in a rented accommodation to claim HRA exemption under the old regime."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions and exemptions is missing to accurately compute the taxable income and tax liability under both the old and new tax regimes."
+            ],
+            "assumptions": [
+                "Assumed the taxpayer is an individual resident in India for FY 2024-25 (AY 2025-26)."
+            ]
+        },
+        "latency_seconds": 2.16,
+        "status": "success"
+    },
+    {
+        "case_id": 10,
+        "description": "I earn 30 lakh annually. I am 50 years old and an Indian resident.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 50,
+                "residential_status": "Indian resident",
+                "gross_income": 3000000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Component-wise breakdown of the 30 lakh income (e.g., salary, capital gains, business income, other sources).",
+                "Details of deductions under Section 80C, 80CCD(1B), 80D, etc. for the old regime.",
+                "Whether living in a rented house to claim HRA exemption.",
+                "Details of home loan interest under Section 24(b), if any."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of the income (salary vs. other sources) and eligible deductions is missing to accurately compute taxable income and tax liability under both regimes."
+            ],
+            "assumptions": [
+                "Assumed income is either salary (allowing standard deduction) or business income, but without a complete financial profile, exact calculations cannot be performed."
+            ]
+        },
+        "latency_seconds": 2.12,
+        "status": "success"
+    },
+    {
+        "case_id": 11,
+        "description": "I make 1200000 rupees yearly and I am 25.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 25,
+                "annual_income": 1200000
+            },
+            "missing_information": [
+                "Nature of income (e.g., salary, business, capital gains, etc.) to determine applicable deductions like standard deduction.",
+                "City of residence and rent paid, if HRA exemption is claimed.",
+                "Tax-saving investments and expenses under Section 80C (e.g., PPF, ELSS, Life Insurance, etc.).",
+                "Contributions to NPS under Section 80CCD(1B).",
+                "Medical insurance premiums paid under Section 80D.",
+                "Home loan interest paid under Section 24(b), if applicable."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as the head of income (salary vs. other sources) and potential deductions/exemptions is missing. Therefore, accurate tax calculations cannot be performed."
+            ],
+            "assumptions": [
+                "Assumed the income of 1,200,000 rupees is the gross total income for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 2.37,
+        "status": "success"
+    },
+    {
+        "case_id": 12,
+        "description": "Annual CTC is 14 LPA and my age is 27.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 27,
+                "annual_ctc": 1400000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Breakdown of salary components (Basic salary, HRA, Special allowance, etc.) to calculate HRA exemption under the old regime.",
+                "Actual rent paid and city of residence (metro vs non-metro) for HRA exemption calculation.",
+                "Details of investments or expenses eligible for Section 80C (e.g., PPF, ELSS, EPF, Life Insurance, Principal repayment of home loan) up to Rs. 1.5 Lakhs.",
+                "Contributions made to National Pension System (NPS) under Section 80CCD(1B).",
+                "Health insurance premium payments eligible under Section 80D.",
+                "Home loan interest paid for self-occupied or let-out property under Section 24(b).",
+                "Any other eligible deductions under Chapter VI-A."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding salary breakup, rent paid, and various tax deductions (such as 80C, 80D, etc.) is missing to accurately compute the taxable income and tax liability under both the old and new tax regimes for FY 2024-25."
+            ],
+            "assumptions": [
+                "It is assumed that the taxpayer is an individual resident in India below 60 years of age.",
+                "Standard deduction of Rs. 75,000 for the new regime and Rs. 50,000 for the old regime (as applicable for FY 2024-25) would apply to the salary income once the basic salary structure is confirmed."
+            ]
+        },
+        "latency_seconds": 2.64,
+        "status": "success"
+    },
+    {
+        "case_id": 13,
+        "description": "I am 32, my yearly pay is around 11 lakhs.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 32,
+                "gross_salary": 1100000
+            },
+            "missing_information": [
+                "Residential status (Resident, Non-Resident, or Resident but Not Ordinarily Resident)",
+                "Components of salary (Basic salary, Dearness Allowance, HRA received, rent paid, city type for HRA exemption)",
+                "Investments and deductions for Old Tax Regime (e.g., Section 80C, 80D, 80CCD(1B), Section 24(b) home loan interest)",
+                "Any other sources of income (e.g., interest income, capital gains, rental income)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, and exact salary components is missing to accurately compute the tax liability under both the old and new regimes for FY 2024-25 (AY 2025-26)."
+            ],
+            "assumptions": [
+                "Assumed the taxpayer is an individual below 60 years of age.",
+                "Assumed the yearly pay of 11 lakhs represents gross salary income before standard deduction."
+            ]
+        },
+        "latency_seconds": 2.0,
+        "status": "success"
+    },
+    {
+        "case_id": 14,
+        "description": "My monthly salary is 80000 rupees and I am 26 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 26,
+                "monthly_salary": 80000,
+                "annual_salary": 960000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Rent paid and city of residence for HRA exemption calculation under the old regime",
+                "Investments or expenses qualifying for deductions under Section 80C (e.g., PPF, ELSS, Life Insurance, EPF)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Health insurance premium paid under Section 80D",
+                "Home loan interest paid for self-occupied or let-out property under Section 24(b)",
+                "Any other sources of income (e.g., capital gains, interest from savings bank or fixed deposits)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, investments, and exemptions is missing.",
+                "Please provide details on rent paid, 80C investments, 80D medical insurance, and other deductions to perform an accurate tax calculation under both old and new regimes."
+            ],
+            "assumptions": [
+                "Salary is the only source of income.",
+                "Standard deduction of Rs. 50,000 under the old regime and Rs. 75,000 under the new regime (as per Budget 2024 updates for FY 2024-25) will apply once salary is confirmed."
+            ]
+        },
+        "latency_seconds": 3.04,
+        "status": "success"
+    },
+    {
+        "case_id": 15,
+        "description": "I receive 1.5 lakh every month. I am 29.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 29,
+                "monthly_salary": 150000,
+                "annual_salary": 1800000
+            },
+            "missing_information": [
+                "Component structure of the salary (e.g., Basic salary, HRA, Special allowance) required to calculate HRA exemption under the old regime.",
+                "City of residence (metro or non-metro) for HRA exemption calculation.",
+                "Actual rent paid if claiming HRA exemption.",
+                "Details of investments and expenses under Section 80C (e.g., PPF, ELSS, EPF, life insurance premium).",
+                "Contributions to NPS under Section 80CCD(1B).",
+                "Medical insurance premium payments under Section 80D.",
+                "Home loan interest details under Section 24(b), if applicable.",
+                "Any other sources of income (e.g., capital gains, interest income, rental income)."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as salary components, deductions under Chapter VI-A (80C, 80D, etc.), and actual rent paid is missing. Therefore, accurate tax calculations under both the old and new tax regimes cannot be performed at this stage."
+            ],
+            "assumptions": [
+                "Assumed '1.5 lakh every month' refers to gross salary income of Rs. 18,00,000 for FY 2024-25.",
+                "Assumed the individual is a resident individual below 60 years of age."
+            ]
+        },
+        "latency_seconds": 2.39,
+        "status": "success"
+    },
+    {
+        "case_id": 16,
+        "description": "I am a 60-year-old Indian resident earning 10 lakh annually.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 60,
+                "residential_status": "Resident",
+                "total_income": 1000000
+            },
+            "missing_information": [
+                "Nature of income (e.g., salary, business, other sources) to determine eligibility for standard deduction.",
+                "Details of deductions under Section 80C, 80D, 80CCD(1B), etc., for the old regime.",
+                "Rent paid and city of residence for HRA exemption calculation, if applicable."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as the breakdown of the 10 lakh income (salary vs other sources) and eligible deductions is missing. Therefore, tax calculations cannot be performed accurately."
+            ],
+            "assumptions": [
+                "Assumed the income of 10 lakh is gross total income for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 1.86,
+        "status": "success"
+    },
+    {
+        "case_id": 17,
+        "description": "Salary: 16L per annum. Age: 34. Resident: Yes.",
+        "response": null,
+        "latency_seconds": 1.63,
+        "status": "failed",
+        "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 11.733210045s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}"
+    },
+    {
+        "case_id": 18,
+        "description": "I get paid 900000 annually and I am 24 years old.",
+        "response": null,
+        "latency_seconds": 1.59,
+        "status": "failed",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "case_id": 19,
+        "description": "I am 45 and my annual salary comes to 21 lakhs.",
+        "response": null,
+        "latency_seconds": 0.82,
+        "status": "failed",
+        "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7.32591275s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}"
+    },
+    {
+        "case_id": 20,
+        "description": "My gross yearly salary is 1250000. I am 31 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 31,
+                "gross_salary": 1250000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Are you opting for the Old Tax Regime or do you have deductions and exemptions (like HRA, Section 80C, 80D, home loan interest under Section 24(b), etc.) to claim under the Old Regime?",
+                "Do you have any other sources of income such as capital gains, rental income, or interest income?"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": 1225000,
+                "tax_before_cess": 82500,
+                "cess": 3300,
+                "total_tax": 85800
+            },
+            "recommended_regime": "new_regime",
+            "explanation": [
+                "Under the New Tax Regime for FY 2024-25 (AY 2025-26), a standard deduction of Rs. 75,000 is available against the gross salary of Rs. 1,250,000, resulting in a taxable income of Rs. 1,225,000.",
+                "Tax calculation under the New Regime: Up to Rs. 3,00,000: Nil; Rs. 3,00,001 to Rs. 7,00,000 (5%): Rs. 20,000; Rs. 7,00,001 to Rs. 10,00,000 (10%): Rs. 30,000; Rs. 10,00,001 to Rs. 12,25,000 (15%): Rs. 32,500. Total tax before cess = Rs. 82,500.",
+                "Adding 4% Health and Education Cess (Rs. 3,300) brings the total tax liability under the New Regime to Rs. 85,800.",
+                "The Old Regime calculation cannot be finalized without knowing your eligible deductions (such as 80C, 80D, HRA, etc.). However, based solely on the standard deduction of Rs. 50,000 under the Old Regime (taxable income Rs. 1,200,000, tax before cess Rs. 1,72,500), the New Regime results in lower tax."
+            ],
+            "assumptions": [
+                "Standard deduction of Rs. 75,000 is applied for the New Tax Regime as per Budget 2024 updates for FY 2024-25.",
+                "Standard deduction of Rs. 50,000 is assumed for the Old Tax Regime if no other deductions are provided.",
+                "No other income sources or deductions exist beyond the salary mentioned."
+            ]
+        },
+        "latency_seconds": 3.07,
+        "status": "success"
+    },
+    {
+        "case_id": 21,
+        "description": "Meri salary 12 lakh yearly hai. Meri age 25 hai aur main Indian resident hoon.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 25,
+                "residential_status": "Indian resident",
+                "gross_salary": 1200000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Details of rent paid and city of residence to calculate HRA exemption under the old regime.",
+                "Investments or expenses under Section 80C (e.g., PPF, ELSS, Life Insurance, EPF, etc.).",
+                "Contributions to National Pension System (NPS) under Section 80CCD(1B).",
+                "Health insurance premium payments under Section 80D.",
+                "Home loan interest details under Section 24(b), if applicable.",
+                "Any other sources of income (e.g., interest from savings bank, fixed deposits, capital gains)."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, and potential other sources of income is missing.",
+                "While standard deduction (INR 75,000 for the new regime and INR 50,000 for the old regime) applies, calculations cannot be accurately completed without knowing other eligible deductions."
+            ],
+            "assumptions": [
+                "Assumed gross salary is INR 12,00,000 per annum.",
+                "Assumed standard deduction of INR 50,000 for the old regime and INR 75,000 for the new regime (as per Union Budget 2024 updates for FY 2024-25)."
+            ]
+        },
+        "latency_seconds": 2.37,
+        "status": "success"
+    },
+    {
+        "case_id": 22,
+        "description": "Mera annual income 15 lakh hai aur meri umar 30 saal hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 30,
+                "reported_annual_income": "15,00,000 INR"
+            },
+            "missing_information": [
+                "Nature of income (salary, business, capital gains, other sources)",
+                "Components of salary (Basic, HRA, DA) if employed",
+                "Rent paid for HRA exemption calculation",
+                "City of residence for HRA calculation",
+                "Investments or expenses under Section 80C (e.g., PPF, ELSS, Life Insurance, PF)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Health insurance premiums paid under Section 80D",
+                "Home loan interest paid under Section 24(b), if any",
+                "Other deductions or exemptions applicable under the old tax regime"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as the nature of income (salary vs other sources) and eligible deductions (like Section 80C, 80D, etc.) is missing.",
+                "Without knowing the exact income type and deductions, accurate tax liability under the old and new tax regimes cannot be computed."
+            ],
+            "assumptions": [
+                "Assumed age is 30 years based on the provided description.",
+                "Assumed the reported annual income of 15 lakh is gross total income before any deductions."
+            ]
+        },
+        "latency_seconds": 2.41,
+        "status": "success"
+    },
+    {
+        "case_id": 23,
+        "description": "Main 28 saal ka hoon. Meri salary 8 lakh per year hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 28,
+                "gross_salary": 800000
+            },
+            "missing_information": [
+                "Component of salary (Basic salary, Dearness Allowance, etc.) required to calculate HRA exemption if rent is paid.",
+                "Actual rent paid and city of residence (metro or non-metro) for HRA calculation.",
+                "Investments or expenses eligible for deduction under Section 80C (e.g., PPF, ELSS, EPF, life insurance, tuition fees, etc.).",
+                "Contributions made to NPS under Section 80CCD(1B).",
+                "Health insurance premium paid eligible for Section 80D.",
+                "Home loan interest paid for self-occupied or let-out property under Section 24(b).",
+                "Any other sources of income (e.g., interest from savings bank, fixed deposits, capital gains, etc.)."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, investments, and salary components is missing. Therefore, accurate tax calculations under both Old and New Tax Regimes cannot be performed at this stage."
+            ],
+            "assumptions": [
+                "Assumed the taxpayer is a resident individual below 60 years of age.",
+                "Assumed gross salary of 8,00,000 INR is the only source of income for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 2.37,
+        "status": "success"
+    },
+    {
+        "case_id": 24,
+        "description": "Meri monthly salary 75000 hai. Main India ka resident hoon aur meri age 26 hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "monthly_salary": 75000,
+                "annual_salary": 900000,
+                "residential_status": "Resident",
+                "age": 26,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Do you live in a rented accommodation to claim House Rent Allowance (HRA) exemption?",
+                "What is the city of your residence (for HRA metro/non-metro calculation)?",
+                "Did you pay any rent, and what is the actual rent paid?",
+                "What are your investments or expenses under Section 80C (e.g., PPF, ELSS, life insurance, EPF, tuition fees)?",
+                "Did you make any contributions to NPS under Section 80CCD(1B)?",
+                "Did you pay any health insurance premiums under Section 80D for yourself, family, or parents?",
+                "Do you have any home loan with interest payable under Section 24(b)?",
+                "Do you have any other sources of income such as savings bank interest, fixed deposits, or capital gains?"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions (like HRA), and other sources of income is missing. Therefore, tax calculations cannot be completed with certainty."
+            ],
+            "assumptions": [
+                "It is assumed that the monthly salary of Rs. 75,000 is received consistently for all 12 months, resulting in an annual gross salary of Rs. 9,00,000.",
+                "No other deductions or income sources have been assumed in the absence of data."
+            ]
+        },
+        "latency_seconds": 2.74,
+        "status": "success"
+    },
+    {
+        "case_id": 25,
+        "description": "Mera CTC 18 LPA hai aur meri age 32 years hai.",
+        "response": null,
+        "latency_seconds": 1.7,
+        "status": "failed",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "case_id": 26,
+        "description": "Meri yearly salary 9 lakh hai, age 45 hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 45,
+                "income": {
+                    "yearly_salary": 900000
+                },
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Details of investments under Section 80C (e.g., PPF, ELSS, Life Insurance, etc.)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Medical insurance premium paid under Section 80D",
+                "Home loan interest paid under Section 24(b)",
+                "Rent paid and city of residence for HRA exemption calculation",
+                "Any other sources of income (e.g., interest income, capital gains)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, and other sources of income is missing. Therefore, tax calculations cannot be performed with certainty at this stage."
+            ],
+            "assumptions": [
+                "Residential status is assumed to be Resident Individual.",
+                "No deductions or exemptions are considered yet as details are not provided."
+            ]
+        },
+        "latency_seconds": 2.19,
+        "status": "success"
+    },
+    {
+        "case_id": 27,
+        "description": "Main 62 saal ka hoon aur meri annual income 10 lakh hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 62,
+                "annual_income": 1000000,
+                "income_type": "not specified"
+            },
+            "missing_information": [
+                "Nature of income (e.g., salary, business, capital gains, other sources)",
+                "Eligible deductions under Section 80C, 80D, etc.",
+                "Home loan interest under Section 24(b) if applicable",
+                "Rent paid and city of residence for HRA calculation if applicable"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of the income and applicable deductions is missing. Therefore, exact tax calculations cannot be performed."
+            ],
+            "assumptions": [
+                "Assumed age is 62 years based on the input '62 saal', making the taxpayer a senior citizen for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 1.9,
+        "status": "success"
+    },
+    {
+        "case_id": 28,
+        "description": "Salary 20 lakh hai, age 35 hai aur resident India ka hoon.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 35,
+                "residential_status": "Resident",
+                "salary": 2000000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Investments under Section 80C (e.g., PPF, ELSS, EPF, life insurance, etc.)",
+                "Contributions under Section 80CCD(1B) (NPS)",
+                "Medical insurance premium under Section 80D",
+                "Home loan interest under Section 24(b), if applicable",
+                "Rent paid and city of residence for HRA exemption calculation under the old regime",
+                "Other sources of income (e.g., interest income, capital gains), if any"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential details regarding deductions, exemptions (like HRA), and investments are missing. Without knowing these figures, precise tax liability under both old and new regimes cannot be computed."
+            ],
+            "assumptions": [
+                "Standard deduction of Rs. 50,000 for the old regime and Rs. 75,000 for the new regime (as per FY 2024-25 budget updates) applies to salaried individuals.",
+                "No other deductions or income sources exist beyond the stated salary of Rs. 20,00,000 unless specified."
+            ]
+        },
+        "latency_seconds": 2.25,
+        "status": "success"
+    },
+    {
+        "case_id": 29,
+        "description": "Meri income 6 lakh hai. Main 24 years ka hoon.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 24,
+                "income": 600000
+            },
+            "missing_information": [
+                "Nature of income (Salary, Business, Capital Gains, Other Sources)",
+                "Investments under Section 80C, 80CCD(1B), 80D, etc. (for Old Regime)",
+                "Rent paid and city of residence (for HRA exemption calculation under Old Regime)",
+                "Home loan interest details under Section 24(b)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the nature of income and deductions is missing to compute the accurate tax liability under both the old and new tax regimes for FY 2024-25."
+            ],
+            "assumptions": [
+                "Assumed income is total gross income of 6,000,000 INR."
+            ]
+        },
+        "latency_seconds": 2.0,
+        "status": "success"
+    },
+    {
+        "case_id": 30,
+        "description": "Main India mein rehta hoon. Meri salary 14 lakh hai aur age 29 hai.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 29,
+                "residential_status": "Resident",
+                "gross_salary": 1400000
+            },
+            "missing_information": [
+                "Rent paid and city of residence for HRA exemption calculation under the old regime.",
+                "Actual investments made under Section 80C (e.g., PPF, ELSS, Life Insurance, etc.).",
+                "Contributions made under Section 80CCD(1B) (NPS).",
+                "Eligible deductions under Section 80D (health insurance premium for self and parents, and parents' age).",
+                "Home loan interest paid under Section 24(b), if any.",
+                "Any other sources of income (e.g., capital gains, interest income)."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions (such as 80C, 80D, HRA components) is missing to accurately compute the taxable income and tax liability under the old regime.",
+                "While a tentative calculation can be done for the new regime assuming only standard deduction, clarifying questions are needed to provide a complete and accurate comparison."
+            ],
+            "assumptions": [
+                "Gross salary is considered as INR 14,00,000 for FY 2024-25.",
+                "Standard deduction of INR 50,000 is applicable under the old regime, and INR 75,000 is applicable under the new regime for FY 2024-25 as per the latest budget updates."
+            ]
+        },
+        "latency_seconds": 2.77,
+        "status": "success"
+    },
+    {
+        "case_id": 31,
+        "description": "My annual salary is 12 lakh.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "annual_salary": 1200000,
+                "financial_year": "2024-25",
+                "assessment_year": "2025-26"
+            },
+            "missing_information": [
+                "Residential status (Resident, Resident but Not Ordinarily Resident, or Non-Resident)",
+                "Age of the taxpayer (to determine applicable slab rates and eligibility for senior citizen benefits)",
+                "Details of investments or deductions for Section 80C (e.g., PF, PPF, ELSS, life insurance)",
+                "Details of contributions to NPS under Section 80CCD(1B)",
+                "Details of health insurance premiums paid under Section 80D (including age of parents if applicable)",
+                "Details of home loan interest paid under Section 24(b), if any",
+                "Details of rent paid and city of residence for HRA exemption calculation",
+                "Any other sources of income (e.g., capital gains, interest income, rental income)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as age, deductions (80C, 80D, etc.), and other potential sources of income are missing to accurately calculate the tax liability under both the old and new tax regimes for FY 2024-25."
+            ],
+            "assumptions": [
+                "Assumed the taxpayer is an individual below 60 years of age, though age needs to be confirmed.",
+                "Assumed no other deductions or exemptions are applicable until specified by the taxpayer."
+            ]
+        },
+        "latency_seconds": 2.66,
+        "status": "success"
+    },
+    {
+        "case_id": 32,
+        "description": "I am 25 years old and a resident of India.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 25,
+                "residential_status": "Resident"
+            },
+            "missing_information": [
+                "Annual salary or total income from all sources (e.g., business, capital gains, other sources)",
+                "Details of investments or deductions under Section 80C, 80D, 80CCD(1B), etc. (for Old Regime)",
+                "Rent paid and city of residence (if claiming HRA exemption)",
+                "Home loan interest details under Section 24(b) (if applicable)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding income and deductions is missing. Please provide your income details and deduction particulars to calculate the tax liability under both old and new regimes."
+            ],
+            "assumptions": [
+                "Assumed financial year is FY 2024-25 (AY 2025-26) as per the prompt."
+            ]
+        },
+        "latency_seconds": 2.44,
+        "status": "success"
+    },
+    {
+        "case_id": 33,
+        "description": "My salary is 10 lakh and I am 30 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 30,
+                "salary": 1000000
+            },
+            "missing_information": [
+                "Residential status (Resident, Non-Resident, etc.)",
+                "Breakup of salary (Basic salary, HRA received, rent paid, city type for HRA exemption)",
+                "Deductions under Section 80C (PPF, ELSS, EPF, etc.)",
+                "Deductions under Section 80CCD(1B) (NPS)",
+                "Deductions under Section 80D (Health insurance premium for self and parents)",
+                "Home loan interest under Section 24(b)",
+                "Any other sources of income (interest, capital gains, rental income, etc.)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions (like HRA), and other potential income sources is missing. Therefore, accurate tax calculation under both old and new regimes cannot be performed at this stage."
+            ],
+            "assumptions": [
+                "It is assumed the individual is a Resident Individual for the financial year 2024-25, but this needs confirmation."
+            ]
+        },
+        "latency_seconds": 2.16,
+        "status": "success"
+    },
+    {
+        "case_id": 34,
+        "description": "I earn 15 lakh annually. Calculate my income tax.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "annual_income": 1500000
+            },
+            "missing_information": [
+                "Age of the taxpayer (to determine applicable tax slabs and rebate eligibility)",
+                "Composition of the 15 lakh income (Salary, Capital Gains, Business Income, etc.)",
+                "Rent paid and city of residence (for HRA exemption under old regime)",
+                "Investments and expenses under Section 80C (PPF, ELSS, Life Insurance, etc.)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Health insurance premium payments under Section 80D (including age of parents if applicable)",
+                "Home loan interest payments under Section 24(b)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as the nature of the income, age of the taxpayer, and eligible deductions under various sections (80C, 80D, 24b, etc.) is missing. Therefore, accurate tax calculations under both old and new regimes cannot be performed at this stage."
+            ],
+            "assumptions": [
+                "Assumed the stated 15 lakh is the gross total income, but the specific head of income (e.g., salary vs. business income) is currently unknown."
+            ]
+        },
+        "latency_seconds": 2.29,
+        "status": "success"
+    },
+    {
+        "case_id": 35,
+        "description": "I am 65 years old. Calculate my tax.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": 65,
+                "residential_status": null
+            },
+            "missing_information": [
+                "Total income from all sources (Salary, Business, Capital Gains, House Property, Other Sources)",
+                "Details of deductions under Section 80C, 80D, etc.",
+                "Residential status (Resident, Resident but Not Ordinarily Resident, or Non-Resident)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential financial information such as income details and deductions are missing.",
+                "It is not possible to calculate the tax liability without knowing the income amount and sources."
+            ],
+            "assumptions": [
+                "Assumed the taxpayer is an individual of 65 years based on the provided text."
+            ]
+        },
+        "latency_seconds": 1.93,
+        "status": "success"
+    },
+    {
+        "case_id": 36,
+        "description": "My monthly salary is 1 lakh.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "monthly_salary": 100000,
+                "annual_salary": 1200000
+            },
+            "missing_information": [
+                "Residential status (Resident, Resident but Not Ordinarily Resident, or Non-Resident)",
+                "Age of the taxpayer",
+                "Details of actual rent paid and city of residence (for HRA exemption calculation under old regime)",
+                "Actual investments/expenses under Section 80C (e.g., PF, PPF, ELSS, life insurance)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Medical insurance premiums paid under Section 80D (self and parents)",
+                "Home loan interest paid under Section 24(b)",
+                "Any other sources of income (e.g., capital gains, rental income, interest income)"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding deductions, exemptions, age, and other potential sources of income is missing to accurately compute the tax liability under both the old and new tax regimes for FY 2024-25 (AY 2025-26)."
+            ],
+            "assumptions": [
+                "It is assumed the taxpayer is an individual resident under 60 years of age, though age and residential status need to be confirmed.",
+                "It is assumed the monthly salary of 1 lakh is received consistently for all 12 months, resulting in an annual gross salary of Rs. 12,00,000."
+            ]
+        },
+        "latency_seconds": 2.69,
+        "status": "success"
+    },
+    {
+        "case_id": 37,
+        "description": "I earn 20 lakh. I have investments under 80C.",
+        "response": null,
+        "latency_seconds": 0.76,
+        "status": "failed",
+        "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8.626697146s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}"
+    },
+    {
+        "case_id": 38,
+        "description": "My salary is 8 lakh and I pay house rent.",
+        "response": null,
+        "latency_seconds": 0.53,
+        "status": "failed",
+        "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7.091954046s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}"
+    },
+    {
+        "case_id": 39,
+        "description": "I earn 12 lakh and have health insurance for my parents.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "gross_salary_or_income": 1200000,
+                "health_insurance_parents": true
+            },
+            "missing_information": [
+                "Age of the taxpayer and parents (to determine applicable tax slabs and senior citizen deduction limits under Section 80D)",
+                "Component-wise breakdown of the 12 lakh income (Salary, Business, Capital Gains, Other Sources)",
+                "Rent paid and city of residence (for HRA exemption calculation under old regime)",
+                "Actual health insurance premium paid for parents and whether parents are senior citizens",
+                "Investments or expenses under Section 80C (e.g., PPF, EPF, ELSS, life insurance)",
+                "Contributions to NPS under Section 80CCD(1B)",
+                "Home loan interest under Section 24(b)",
+                "Other deductions or exemptions applicable under the old regime"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as the age of the taxpayer, exact income type (e.g., salary), and specific deduction amounts (like Section 80C and exact 80D premium amounts) are missing. Therefore, tax calculations cannot be performed with certainty at this stage."
+            ],
+            "assumptions": [
+                "Assumed the 12 lakh represents annual gross income for FY 2024-25."
+            ]
+        },
+        "latency_seconds": 2.38,
+        "status": "success"
+    },
+    {
+        "case_id": 40,
+        "description": "I have a home loan and pay interest every year.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "home_loan_interest": true
+            },
+            "missing_information": [
+                "What is your gross annual income and income sources (e.g., salary, business, capital gains, other sources)?",
+                "What is the exact annual amount of home loan interest paid under Section 24(b)? Is the property self-occupied or let-out?",
+                "What is your age/residential status (to determine applicable tax slabs and senior citizen benefits)?",
+                "What are your investments or deductions under Chapter VI-A (such as Section 80C, 80D, 80CCD(1B), etc.) for the old regime?",
+                "Do you receive House Rent Allowance (HRA) and pay rent?",
+                "What are your savings bank interest and other deductions?"
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "The provided taxpayer description only mentions having a home loan and paying interest. Essential information such as total income, age, exact home loan interest amount, and other deductions are missing to perform a complete income tax calculation for FY 2024-25 (AY 2025-26)."
+            ],
+            "assumptions": [
+                "No assumptions are made regarding income or deduction amounts due to insufficient details."
+            ]
+        },
+        "latency_seconds": 2.35,
+        "status": "success"
+    },
+    {
+        "case_id": 41,
+        "description": "I am 25 years old and 40 years old. My salary is 12 lakh.",
+        "response": null,
+        "latency_seconds": 1.38,
+        "status": "failed",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "case_id": 42,
+        "description": "My annual salary is 10 lakh but my monthly salary is 2 lakh.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "annual_salary": "10 lakh (stated, but contradicted by monthly salary)"
+            },
+            "missing_information": [
+                "Correct annual salary or monthly salary breakdown",
+                "Age of the taxpayer",
+                "Details of deductions (80C, 80D, HRA, Home Loan interest, etc.) if wishing to evaluate the old regime accurately"
+            ],
+            "contradictions": [
+                "The annual salary is stated as 10 lakh, but the monthly salary is stated as 2 lakh (which would imply an annual salary of 24 lakh)."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Cannot calculate tax because there is a direct contradiction between the stated annual salary (10 lakh) and the monthly salary (2 lakh)."
+            ],
+            "assumptions": []
+        },
+        "latency_seconds": 1.77,
+        "status": "success"
+    },
+    {
+        "case_id": 43,
+        "description": "I am an Indian resident and also a non-resident for the same year.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "residential_status": "Contradictory/Ambiguous"
+            },
+            "missing_information": [
+                "What is the actual residential status for FY 2024-25 (Resident, Non-Resident (NR), or Resident but Not Ordinarily Resident (RNOR))?",
+                "What are the income details (salary, capital gains, other sources, etc.) for FY 2024-25?",
+                "What deductions and exemptions are being claimed (80C, 80D, HRA, home loan interest, etc.)?"
+            ],
+            "contradictions": [
+                "The taxpayer description states 'I am an Indian resident and also a non-resident for the same year', which is legally contradictory as an individual cannot be both a resident and a non-resident for the same financial year under the Income Tax Act."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "It is not possible to calculate tax liability or recommend a tax regime because the taxpayer's residential status is contradictory, and all essential income and deduction details are missing."
+            ],
+            "assumptions": [
+                "No assumptions have been made regarding income or deductions due to insufficient information."
+            ]
+        },
+        "latency_seconds": 2.38,
+        "status": "success"
+    },
+    {
+        "case_id": 44,
+        "description": "My salary is 12 lakh and 15 lakh annually.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {},
+            "missing_information": [
+                "Exact annual salary (the description mentions contradictory amounts: '12 lakh and 15 lakh')",
+                "City of residence for HRA exemption calculation",
+                "Actual rent paid and rent received (if applicable) for HRA",
+                "Investments under Section 80C",
+                "Contributions under Section 80CCD(1B)",
+                "Medical insurance premiums and parents' ages under Section 80D",
+                "Home loan interest under Section 24(b)",
+                "Other sources of income (e.g., interest, capital gains)"
+            ],
+            "contradictions": [
+                "The taxpayer stated contradictory salary figures: '12 lakh and 15 lakh annually'."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Cannot calculate tax because essential salary information is contradictory and deductions/exemptions data are completely missing."
+            ],
+            "assumptions": []
+        },
+        "latency_seconds": 2.21,
+        "status": "success"
+    },
+    {
+        "case_id": 45,
+        "description": "I am 30 years old, but I am also 70 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "age": null
+            },
+            "missing_information": [
+                "Actual age of the taxpayer",
+                "Total income details (Salary, Capital Gains, House Property, etc.)",
+                "Deductions and exemptions (80C, 80D, HRA, Home Loan Interest, etc.)"
+            ],
+            "contradictions": [
+                "The taxpayer description contains contradictory information regarding age: 'I am 30 years old, but I am also 70 years old.'"
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "The tax calculation cannot be performed because essential information such as income components, deductions, and age is either missing or contradictory."
+            ],
+            "assumptions": []
+        },
+        "latency_seconds": 1.99,
+        "status": "success"
+    },
+    {
+        "case_id": 46,
+        "description": "My annual salary is 10 lakh. I have no investments and I invested 2 lakh under 80C.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "annual_salary": 1000000,
+                "investments": "none stated, contradictory with 80C claim"
+            },
+            "missing_information": [
+                "Age of the taxpayer (needed to determine applicable tax slabs and rebate limits)",
+                "Residential status (Resident, Non-Resident, etc.)",
+                "Breakdown of deductions (specifically clarifying the contradiction regarding investments vs 2 lakh under 80C)"
+            ],
+            "contradictions": [
+                "The taxpayer stated 'I have no investments' immediately followed by 'and I invested 2 lakh under 80C'."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Cannot calculate tax because there is a direct contradiction in the provided description regarding investments and Section 80C deductions, and essential details such as age are missing."
+            ],
+            "assumptions": [
+                "No assumptions are made regarding tax calculations due to contradictory and insufficient information."
+            ]
+        },
+        "latency_seconds": 2.51,
+        "status": "success"
+    },
+    {
+        "case_id": 47,
+        "description": "I earn 12 lakh per year and my monthly salary is 50000.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "stated_annual_income": "12 lakh",
+                "stated_monthly_salary": "50000"
+            },
+            "missing_information": [
+                "There is a direct contradiction between the stated annual income of 12 lakh and the monthly salary of 50,000 (which would annualize to 6 lakh).",
+                "Breakdown of income sources (salary, other sources, capital gains, etc.).",
+                "Details of deductions under Section 80C, 80D, 80CCD(1B), etc., for the old regime.",
+                "Details regarding rent paid, basic salary, and city of residence for HRA exemption.",
+                "Residential status and age of the taxpayer."
+            ],
+            "contradictions": [
+                "Annual income is stated as 12,00,000, but monthly salary is stated as 50,000 (annualizing to 6,00,000), resulting in a discrepancy of 6,00,000."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Cannot calculate tax accurately due to contradictory income figures provided and lack of essential deduction details."
+            ],
+            "assumptions": [
+                "No assumptions made due to insufficient and contradictory information."
+            ]
+        },
+        "latency_seconds": 2.37,
+        "status": "success"
+    },
+    {
+        "case_id": 48,
+        "description": "I am a non-resident Indian resident for the same financial year.",
+        "response": null,
+        "latency_seconds": 1.52,
+        "status": "failed",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "case_id": 49,
+        "description": "My age is 25 and I am 80 years old.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {},
+            "missing_information": [
+                "Age of the taxpayer (contradictory information provided)",
+                "Income details (Salary, Capital Gains, Business Income, etc.)",
+                "Deductions (80C, 80D, HRA, Home Loan Interest, etc.)",
+                "Residential status"
+            ],
+            "contradictions": [
+                "The taxpayer states both 'My age is 25' and 'I am 80 years old' in the description."
+            ],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information such as income and deductions is missing.",
+                "There is a direct contradiction regarding the age of the taxpayer (25 years vs 80 years), which affects tax slabs and rebate applicability."
+            ],
+            "assumptions": []
+        },
+        "latency_seconds": 1.93,
+        "status": "success"
+    },
+    {
+        "case_id": 50,
+        "description": "My salary is 15 lakh, but I have not mentioned whether it is monthly or annual.",
+        "response": {
+            "status": "clarification_required",
+            "taxpayer_details": {
+                "salary_mentioned": "15 lakh"
+            },
+            "missing_information": [
+                "Whether the salary of 15 lakh is monthly or annual.",
+                "Breakdown of salary components (Basic salary, HRA, etc.) to calculate HRA exemption under the old regime.",
+                "Actual rent paid and city of residence for HRA exemption.",
+                "Deductions under Section 80C, 80CCD(1B), 80D, and Section 24(b) home-loan interest.",
+                "Age and residential status of the taxpayer.",
+                "Any other sources of income."
+            ],
+            "contradictions": [],
+            "old_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "new_regime": {
+                "taxable_income": null,
+                "tax_before_cess": null,
+                "cess": null,
+                "total_tax": null
+            },
+            "recommended_regime": null,
+            "explanation": [
+                "Essential information regarding the periodicity of the salary (monthly vs annual) is missing. Additionally, details required for deductions and exemptions under the old regime have not been provided. Therefore, tax calculation cannot be performed with certainty."
+            ],
+            "assumptions": [
+                "Assumed the income stated refers to salary income, but frequency (monthly or annual) is ambiguous."
+            ]
+        },
+        "latency_seconds": 2.15,
+        "status": "success"
+    }
+]
